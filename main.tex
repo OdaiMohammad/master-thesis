@@ -1,0 +1,53 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Load Thesis Class
+\documentclass{DEIThesis}
+
+\title{Entity and Relation Extraction for Marine Biology Research Papers}
+
+\author{Odai Mohammad}
+
+% Advisor
+\advisor{Giorgio Maria Di Nunzio}
+
+% If you are co-advised
+\coadvisor{}
+\coadvisorsUniversity{}
+
+\university{University of Padova}
+\mastername{Computer Engineering}
+
+\academicYear{2023/2024}
+
+
+
+
+\begin{filecontents*}[overwrite]{\jobname.xmpdata}
+    \Title{Entity and Relation Extraction for Marine Biology Research Papers}
+    \Author{Odai Mohammad}
+    \Language{en-EN}
+    \Keywords{Computer Engineering\sep LaTeX}
+\end{filecontents*}
+
+% Document
+
+\begin{document}
+    % The front matter (Cover, ToC, Abstract, etc...)
+    \frontmatter
+
+    % The main content
+    \mainmatter
+    
+    \include{chapters/01_introduction}
+    \include{chapters/02_Related_Work}
+              \include{chapters/99_conclusions}
+         
+             
+             
+              
+    % Bibliography, appendix, acknowledges, etc...
+     \backmatter
+    
+\customappendix
+\end{document}
