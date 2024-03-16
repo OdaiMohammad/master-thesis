@@ -9,8 +9,25 @@ One way to represent information in the text is in the form of entities and rela
 The NER identifies entities from the text, and the RE task can identify relationships between those entities. Furthermore, end-to-end relation extraction aims to identify named entities and extract relations between them in one go. Effectively modeling these two subtasks jointly\cite{Zhong2020AFE}, either by casting them in one structured prediction framework, or performing multi-task learning through shared representations.
 
 Many NLP applications can benefit from relational information derived from natural language\cite{Goyal2018RNE}, including Structured Search, Knowledge Base (KB) population, Information Retrieval, Question-Answering, Language Understanding, Ontology Learning, etc. Therefore these tasks have been studied extensively and many models have been proposed to tackle them.
-\section{Section 1}
 
-\section{Section 2}
+We can recognize two categories of joint models: Structured prediction and Multi-task learning models.
+
+\section{Structured prediction models}
+Structured prediction approaches cast the two tasks into one unified framework, although it can be formulated in various ways.
+Li and Ji\cite{li-ji-2014-incremental} propose an action-based system that identifies new entities as well as links to previous entities, Zhang et al.\cite{zhang-etal-2017-end};
+Wang and Lu\cite{wang-lu-2020-two} adopt a table-filling approach proposed in (Miwa and Sasaki\cite{miwa-sasaki-2014-modeling});
+Katiyar and Cardie\cite{katiyar-cardie-2017-going} and Zheng et al.\cite{zheng-etal-2017-joint} employ sequence tagging-based approaches;
+Sun et al.\cite{sun-etal-2019-joint} and Fu et al.\cite{fu-etal-2019-graphrel} propose graph-based approaches to jointly predict entity and relation types;
+and, Li et al\cite{li-etal-2019-entity} convert the task into a multi-turn question answering problem.
+All of these approaches need to tackle a global optimization problem and perform joint decoding at inference time, using beam search or reinforcement learning.
+
+\section{Multi-task learning models}
+This family of models essentially builds two separate models for entity recognition and relation extraction and optimizes them together through parameter sharing.
+Miwa and Bansal\cite{miwa-bansal-2016-end} propose to use a sequence tagging model for entity prediction and a tree-based LSTM model for relation extraction. The two models share one LSTM layer for contextualized word representations and they find sharing parameters improves performance (slightly) for both models.
+The approach of Bekoulis et al.\cite{bekoulis-etal-2018-adversarial} is similar except that they model relation classification as a multi-label head selection problem. Note that these approaches still perform pipelined decoding: entities are first extracted and the relation model is applied on the predicted entities.
+DYGIE and DYGIE++ (Luan et al. \cite{luan-etal-2019-general}; Wadden et al. \cite{Wadden2019EntityRA}), build on recent span-based models for coreference resolution (Lee et al. \cite{lee-etal-2017-end}) and semantic role labeling (He et al. \cite{he-etal-2018-jointly}). The key idea of their approaches is to learn shared span representations between the two tasks and update span representations through dynamic graph propagation layers.
+A more recent work Lin et al.\cite{lin-etal-2020-joint} further extends DYGIE++ by incorporating global features based on cross-substask and cross-instance constraints.2
+Zhong et al. \cite{Zhong2020AFE} propose a similar approach. But it is much simpler and performs better.
+
 
 

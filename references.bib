@@ -17,3 +17,307 @@ volume = {29},
 journal = {Computer Science Review},
 doi = {10.1016/j.cosrev.2018.06.001}
 }
+
+@inproceedings{li-ji-2014-incremental,
+    title = "Incremental Joint Extraction of Entity Mentions and Relations",
+    author = "Li, Qi  and
+      Ji, Heng",
+    editor = "Toutanova, Kristina  and
+      Wu, Hua",
+    booktitle = "Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jun,
+    year = "2014",
+    address = "Baltimore, Maryland",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P14-1038",
+    doi = "10.3115/v1/P14-1038",
+    pages = "402--412",
+}
+
+@inproceedings{zhang-etal-2017-end,
+    title = "End-to-End Neural Relation Extraction with Global Optimization",
+    author = "Zhang, Meishan  and
+      Zhang, Yue  and
+      Fu, Guohong",
+    editor = "Palmer, Martha  and
+      Hwa, Rebecca  and
+      Riedel, Sebastian",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D17-1182",
+    doi = "10.18653/v1/D17-1182",
+    pages = "1730--1740",
+    abstract = "Neural networks have shown promising results for relation extraction. State-of-the-art models cast the task as an end-to-end problem, solved incrementally using a local classifier. Yet previous work using statistical models have demonstrated that global optimization can achieve better performances compared to local classification. We build a globally optimized neural model for end-to-end relation extraction, proposing novel LSTM features in order to better learn context representations. In addition, we present a novel method to integrate syntactic information to facilitate global learning, yet requiring little background on syntactic grammars thus being easy to extend. Experimental results show that our proposed model is highly effective, achieving the best performances on two standard benchmarks.",
+}
+
+@inproceedings{wang-lu-2020-two,
+    title = "Two are Better than One: Joint Entity and Relation Extraction with Table-Sequence Encoders",
+    author = "Wang, Jue  and
+      Lu, Wei",
+    editor = "Webber, Bonnie  and
+      Cohn, Trevor  and
+      He, Yulan  and
+      Liu, Yang",
+    booktitle = "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    month = nov,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.emnlp-main.133",
+    doi = "10.18653/v1/2020.emnlp-main.133",
+    pages = "1706--1721",
+    abstract = "Named entity recognition and relation extraction are two important fundamental problems. Joint learning algorithms have been proposed to solve both tasks simultaneously, and many of them cast the joint task as a table-filling problem. However, they typically focused on learning a single encoder (usually learning representation in the form of a table) to capture information required for both tasks within the same space. We argue that it can be beneficial to design two distinct encoders to capture such two different types of information in the learning process. In this work, we propose the novel table-sequence encoders where two different encoders {--} a table encoder and a sequence encoder are designed to help each other in the representation learning process. Our experiments confirm the advantages of having two encoders over one encoder. On several standard datasets, our model shows significant improvements over existing approaches.",
+}
+
+@inproceedings{miwa-sasaki-2014-modeling,
+    title = "Modeling Joint Entity and Relation Extraction with Table Representation",
+    author = "Miwa, Makoto  and
+      Sasaki, Yutaka",
+    editor = "Moschitti, Alessandro  and
+      Pang, Bo  and
+      Daelemans, Walter",
+    booktitle = "Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing ({EMNLP})",
+    month = oct,
+    year = "2014",
+    address = "Doha, Qatar",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D14-1200",
+    doi = "10.3115/v1/D14-1200",
+    pages = "1858--1869",
+}
+
+@inproceedings{katiyar-cardie-2017-going,
+    title = "Going out on a limb: Joint Extraction of Entity Mentions and Relations without Dependency Trees",
+    author = "Katiyar, Arzoo  and
+      Cardie, Claire",
+    editor = "Barzilay, Regina  and
+      Kan, Min-Yen",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P17-1085",
+    doi = "10.18653/v1/P17-1085",
+    pages = "917--928",
+    abstract = "We present a novel attention-based recurrent neural network for joint extraction of entity mentions and relations. We show that attention along with long short term memory (LSTM) network can extract semantic relations between entity mentions without having access to dependency trees. Experiments on Automatic Content Extraction (ACE) corpora show that our model significantly outperforms feature-based joint model by Li and Ji (2014). We also compare our model with an end-to-end tree-based LSTM model (SPTree) by Miwa and Bansal (2016) and show that our model performs within 1{\%} on entity mentions and 2{\%} on relations. Our fine-grained analysis also shows that our model performs significantly better on Agent-Artifact relations, while SPTree performs better on Physical and Part-Whole relations.",
+}
+
+@inproceedings{zheng-etal-2017-joint,
+    title = "Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme",
+    author = "Zheng, Suncong  and
+      Wang, Feng  and
+      Bao, Hongyun  and
+      Hao, Yuexing  and
+      Zhou, Peng  and
+      Xu, Bo",
+    editor = "Barzilay, Regina  and
+      Kan, Min-Yen",
+    booktitle = "Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2017",
+    address = "Vancouver, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P17-1113",
+    doi = "10.18653/v1/P17-1113",
+    pages = "1227--1236",
+    abstract = "Joint extraction of entities and relations is an important task in information extraction. To tackle this problem, we firstly propose a novel tagging scheme that can convert the joint extraction task to a tagging problem.. Then, based on our tagging scheme, we study different end-to-end models to extract entities and their relations directly, without identifying entities and relations separately. We conduct experiments on a public dataset produced by distant supervision method and the experimental results show that the tagging based methods are better than most of the existing pipelined and joint learning methods. What{'}s more, the end-to-end model proposed in this paper, achieves the best results on the public dataset.",
+}
+
+@inproceedings{sun-etal-2019-joint,
+    title = "Joint Type Inference on Entities and Relations via Graph Convolutional Networks",
+    author = "Sun, Changzhi  and
+      Gong, Yeyun  and
+      Wu, Yuanbin  and
+      Gong, Ming  and
+      Jiang, Daxin  and
+      Lan, Man  and
+      Sun, Shiliang  and
+      Duan, Nan",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'\i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1131",
+    doi = "10.18653/v1/P19-1131",
+    pages = "1361--1370",
+    abstract = "We develop a new paradigm for the task of joint entity relation extraction. It first identifies entity spans, then performs a joint inference on entity types and relation types. To tackle the joint type inference task, we propose a novel graph convolutional network (GCN) running on an entity-relation bipartite graph. By introducing a binary relation classification task, we are able to utilize the structure of entity-relation bipartite graph in a more efficient and interpretable way. Experiments on ACE05 show that our model outperforms existing joint models in entity performance and is competitive with the state-of-the-art in relation performance.",
+}
+
+@inproceedings{fu-etal-2019-graphrel,
+    title = "{G}raph{R}el: Modeling Text as Relational Graphs for Joint Entity and Relation Extraction",
+    author = "Fu, Tsu-Jui  and
+      Li, Peng-Hsuan  and
+      Ma, Wei-Yun",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'\i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1136",
+    doi = "10.18653/v1/P19-1136",
+    pages = "1409--1418",
+    abstract = "In this paper, we present GraphRel, an end-to-end relation extraction model which uses graph convolutional networks (GCNs) to jointly learn named entities and relations. In contrast to previous baselines, we consider the interaction between named entities and relations via a 2nd-phase relation-weighted GCN to better extract relations. Linear and dependency structures are both used to extract both sequential and regional features of the text, and a complete word graph is further utilized to extract implicit features among all word pairs of the text. With the graph-based approach, the prediction for overlapping relations is substantially improved over previous sequential approaches. We evaluate GraphRel on two public datasets: NYT and WebNLG. Results show that GraphRel maintains high precision while increasing recall substantially. Also, GraphRel outperforms previous work by 3.2{\%} and 5.8{\%} (F1 score), achieving a new state-of-the-art for relation extraction.",
+}
+
+@inproceedings{li-etal-2019-entity,
+    title = "Entity-Relation Extraction as Multi-Turn Question Answering",
+    author = "Li, Xiaoya  and
+      Yin, Fan  and
+      Sun, Zijun  and
+      Li, Xiayu  and
+      Yuan, Arianna  and
+      Chai, Duo  and
+      Zhou, Mingxin  and
+      Li, Jiwei",
+    editor = "Korhonen, Anna  and
+      Traum, David  and
+      M{\`a}rquez, Llu{\'\i}s",
+    booktitle = "Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P19-1129",
+    doi = "10.18653/v1/P19-1129",
+    pages = "1340--1350",
+    abstract = "In this paper, we propose a new paradigm for the task of entity-relation extraction. We cast the task as a multi-turn question answering problem, i.e., the extraction of entities and elations is transformed to the task of identifying answer spans from the context. This multi-turn QA formalization comes with several key advantages: firstly, the question query encodes important information for the entity/relation class we want to identify; secondly, QA provides a natural way of jointly modeling entity and relation; and thirdly, it allows us to exploit the well developed machine reading comprehension (MRC) models. Experiments on the ACE and the CoNLL04 corpora demonstrate that the proposed paradigm significantly outperforms previous best models. We are able to obtain the state-of-the-art results on all of the ACE04, ACE05 and CoNLL04 datasets, increasing the SOTA results on the three datasets to 49.6 (+1.2), 60.3 (+0.7) and 69.2 (+1.4), respectively. Additionally, we construct and will release a newly developed dataset RESUME, which requires multi-step reasoning to construct entity dependencies, as opposed to the single-step dependency extraction in the triplet exaction in previous datasets. The proposed multi-turn QA model also achieves the best performance on the RESUME dataset.",
+}
+
+@inproceedings{miwa-bansal-2016-end,
+    title = "End-to-End Relation Extraction using {LSTM}s on Sequences and Tree Structures",
+    author = "Miwa, Makoto  and
+      Bansal, Mohit",
+    editor = "Erk, Katrin  and
+      Smith, Noah A.",
+    booktitle = "Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2016",
+    address = "Berlin, Germany",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P16-1105",
+    doi = "10.18653/v1/P16-1105",
+    pages = "1105--1116",
+}
+
+@inproceedings{bekoulis-etal-2018-adversarial,
+    title = "Adversarial training for multi-context joint entity and relation extraction",
+    author = "Bekoulis, Giannis  and
+      Deleu, Johannes  and
+      Demeester, Thomas  and
+      Develder, Chris",
+    editor = "Riloff, Ellen  and
+      Chiang, David  and
+      Hockenmaier, Julia  and
+      Tsujii, Jun{'}ichi",
+    booktitle = "Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing",
+    month = oct # "-" # nov,
+    year = "2018",
+    address = "Brussels, Belgium",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D18-1307",
+    doi = "10.18653/v1/D18-1307",
+    pages = "2830--2836",
+    abstract = "Adversarial training (AT) is a regularization method that can be used to improve the robustness of neural network methods by adding small perturbations in the training data. We show how to use AT for the tasks of entity recognition and relation extraction. In particular, we demonstrate that applying AT to a general purpose baseline model for jointly extracting entities and relations, allows improving the state-of-the-art effectiveness on several datasets in different contexts (i.e., news, biomedical, and real estate data) and for different languages (English and Dutch).",
+}
+
+@inproceedings{luan-etal-2019-general,
+    title = "A general framework for information extraction using dynamic span graphs",
+    author = "Luan, Yi  and
+      Wadden, Dave  and
+      He, Luheng  and
+      Shah, Amy  and
+      Ostendorf, Mari  and
+      Hajishirzi, Hannaneh",
+    editor = "Burstein, Jill  and
+      Doran, Christy  and
+      Solorio, Thamar",
+    booktitle = "Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+    month = jun,
+    year = "2019",
+    address = "Minneapolis, Minnesota",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/N19-1308",
+    doi = "10.18653/v1/N19-1308",
+    pages = "3036--3046",
+    abstract = "We introduce a general framework for several information extraction tasks that share span representations using dynamically constructed span graphs. The graphs are dynamically constructed by selecting the most confident entity spans and linking these nodes with confidence-weighted relation types and coreferences. The dynamic span graph allow coreference and relation type confidences to propagate through the graph to iteratively refine the span representations. This is unlike previous multi-task frameworks for information extraction in which the only interaction between tasks is in the shared first-layer LSTM. Our framework significantly outperforms state-of-the-art on multiple information extraction tasks across multiple datasets reflecting different domains. We further observe that the span enumeration approach is good at detecting nested span entities, with significant F1 score improvement on the ACE dataset.",
+}
+
+@article{Wadden2019EntityRA,
+  title={Entity, Relation, and Event Extraction with Contextualized Span Representations},
+  author={David Wadden and Ulme Wennberg and Yi Luan and Hannaneh Hajishirzi},
+  journal={ArXiv},
+  year={2019},
+  volume={abs/1909.03546},
+  url={https://api.semanticscholar.org/CorpusID:202539496}
+}
+
+@inproceedings{lee-etal-2017-end,
+    title = "End-to-end Neural Coreference Resolution",
+    author = "Lee, Kenton  and
+      He, Luheng  and
+      Lewis, Mike  and
+      Zettlemoyer, Luke",
+    editor = "Palmer, Martha  and
+      Hwa, Rebecca  and
+      Riedel, Sebastian",
+    booktitle = "Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing",
+    month = sep,
+    year = "2017",
+    address = "Copenhagen, Denmark",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/D17-1018",
+    doi = "10.18653/v1/D17-1018",
+    pages = "188--197",
+    abstract = "We introduce the first end-to-end coreference resolution model and show that it significantly outperforms all previous work without using a syntactic parser or hand-engineered mention detector. The key idea is to directly consider all spans in a document as potential mentions and learn distributions over possible antecedents for each. The model computes span embeddings that combine context-dependent boundary representations with a head-finding attention mechanism. It is trained to maximize the marginal likelihood of gold antecedent spans from coreference clusters and is factored to enable aggressive pruning of potential mentions. Experiments demonstrate state-of-the-art performance, with a gain of 1.5 F1 on the OntoNotes benchmark and by 3.1 F1 using a 5-model ensemble, despite the fact that this is the first approach to be successfully trained with no external resources.",
+}
+
+@inproceedings{he-etal-2018-jointly,
+    title = "Jointly Predicting Predicates and Arguments in Neural Semantic Role Labeling",
+    author = "He, Luheng  and
+      Lee, Kenton  and
+      Levy, Omer  and
+      Zettlemoyer, Luke",
+    editor = "Gurevych, Iryna  and
+      Miyao, Yusuke",
+    booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)",
+    month = jul,
+    year = "2018",
+    address = "Melbourne, Australia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/P18-2058",
+    doi = "10.18653/v1/P18-2058",
+    pages = "364--369",
+    abstract = "Recent BIO-tagging-based neural semantic role labeling models are very high performing, but assume gold predicates as part of the input and cannot incorporate span-level features. We propose an end-to-end approach for jointly predicting all predicates, arguments spans, and the relations between them. The model makes independent decisions about what relationship, if any, holds between every possible word-span pair, and learns contextualized span representations that provide rich, shared input features for each decision. Experiments demonstrate that this approach sets a new state of the art on PropBank SRL without gold predicates.",
+}
+
+@inproceedings{lin-etal-2020-joint,
+    title = "A Joint Neural Model for Information Extraction with Global Features",
+    author = "Lin, Ying  and
+      Ji, Heng  and
+      Huang, Fei  and
+      Wu, Lingfei",
+    editor = "Jurafsky, Dan  and
+      Chai, Joyce  and
+      Schluter, Natalie  and
+      Tetreault, Joel",
+    booktitle = "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.acl-main.713",
+    doi = "10.18653/v1/2020.acl-main.713",
+    pages = "7999--8009",
+    abstract = "Most existing joint neural models for Information Extraction (IE) use local task-specific classifiers to predict labels for individual instances (e.g., trigger, relation) regardless of their interactions. For example, a victim of a die event is likely to be a victim of an attack event in the same sentence. In order to capture such cross-subtask and cross-instance inter-dependencies, we propose a joint neural framework, OneIE, that aims to extract the globally optimal IE result as a graph from an input sentence. OneIE performs end-to-end IE in four stages: (1) Encoding a given sentence as contextualized word representations; (2) Identifying entity mentions and event triggers as nodes; (3) Computing label scores for all nodes and their pairwise links using local classifiers; (4) Searching for the globally optimal graph with a beam decoder. At the decoding stage, we incorporate global features to capture the cross-subtask and cross-instance interactions. Experiments show that adding global features improves the performance of our model and achieves new state of-the-art on all subtasks. In addition, as OneIE does not use any language-specific feature, we prove it can be easily applied to new languages or trained in a multilingual manner.",
+}
